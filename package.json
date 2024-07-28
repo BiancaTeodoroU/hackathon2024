@@ -1,0 +1,17 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "Voice to Text Demo",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:BiancaTeodoroU/hackathon2024.git"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
