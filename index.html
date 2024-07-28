@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de atendimento médico</title>
+</head>
+<body>
+    <div class="table">
+        <table class="header-table">
+            <tr>
+                <td>
+                    <strong>CLASSIFICAÇÃO DE RISCO</strong><br>
+                    Nº: <span class="no-border"></span>
+                </td>
+                <td class="center">
+                    <strong>FICHA DE ATENDIMENTO URGÊNCIA E EMERGÊNCIA</strong>
+                </td>
+                <td class="center">
+                    <img src="upa24h_logo.png" alt="UPA 24h"><br>
+                    <img src="sus_logo.png" alt="SUS">
+                </td>
+            </tr>
+        </table>
+
+        <table class="content-table">
+            <tr>
+                <td colspan="2"><strong>DADOS DE IDENTIFICAÇÃO</strong></td>
+                <td><strong>DATA:</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>PACIENTE:</strong></td>
+                <td></td>
+                <td><strong>HORA:</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>DATA NASC.:</strong></td>
+                <td></td>
+                <td><strong>IDADE:</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>CPF:</strong></td>
+                <td></td>
+                <td><strong>CONTATO:</strong></td>
+                <td>
+                    <label for=""><input type="radio" name="contato" value="F"> F</label>
+                    <label for=""><input type="radio" name="contato" value="M"> M</label>
+                    <label for=""><input type="radio" name="contato" value="Outro"> Outro</label>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>END.:</strong></td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td><strong>BAIRRO:</strong></td>
+                <td></td>
+                <td><strong>CIDADE:</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>RAÇA/COR:</strong></td>
+                <td>
+                    <label for=""><input type="checkbox"> Branca</label>
+                    <label for=""><input type="checkbox"> Preta</label>
+                    <label for=""><input type="checkbox"> Parda</label>
+                    <label for=""><input type="checkbox"> Amarela</label>
+                    <label for=""><input type="checkbox"> Indígena</label>
+                    <label for=""><input type="checkbox"> Ignorado</label>
+                </td>
+                <td><strong>UF:</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>ESCOLARIDADE:</strong></td>
+                <td>
+                    <label for=""><input type="checkbox"> Analfabeta</label>
+                    <label for=""><input type="checkbox"> Fund. 1-9A</label>
+                    <label for=""><input type="checkbox"> Médio 1-3A</label>
+                    <label for=""><input type="checkbox"> Superior</label>
+                    <label for=""><input type="checkbox"> Ignorado</label>
+                    <label for=""><input type="checkbox"> N/A</label>
+                </td>
+                <td><strong>PROFISSÃO:</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>ORIGEM:</strong></td>
+                <td>
+                    <label for=""><input type="checkbox"> SAMU</label>
+                    <label for=""><input type="checkbox"> Municípios</label>
+                    <label for=""><input type="checkbox"> Demanda</label>
+                </td>
+                <td><strong>ESPECIALIDADE:</strong></td>
+                <td>
+                    <label for=""><input type="checkbox"> Clínico</label>
+                    <label for=""><input type="checkbox"> Pediatria</label>
+                    <label for=""><input type="checkbox"> Ortopedia</label>
+                    <label for=""><input type="checkbox"> Odontologia</label>
+                    <label for=""><input type="checkbox"> SG</label>
+                </td>
+            </tr>
+        </table>
+
+        <table class="content-table">
+            <tr>
+                <td><strong>VACINAÇÃO</strong></td>
+                <td>
+                    H1N1/Influenza: 
+                    <label for=""><input type="checkbox"> SIM</label>
+                    <label for=""><input type="checkbox"> NÃO</label>
+                </td>
+                <td>
+                    COVID-19: 
+                    <label for=""><input type="checkbox">D1</label>
+                    <label for=""><input type="checkbox">D2</label> 
+                    <label for=""><input type="checkbox">REF 1</label>
+                    <label for=""><input type="checkbox">REF 2</label>
+                    <label for=""><input type="checkbox">Nenhuma dose</label>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>PA</strong></td>
+                <td></td>
+                <td><strong>FC</strong></td>
+            </tr>
+            <tr>
+                <td><strong>bpm</strong></td>
+                <td></td>
+                <td><strong>FR</strong></td>
+            </tr>
+            <tr>
+                <td><strong>ipm</strong></td>
+                <td></td>
+                <td><strong>T</strong></td>
+            </tr>
+            <tr>
+                <td><strong>%</strong></td>
+                <td></td>
+                <td><strong>HGT</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Kg</strong></td>
+                <td></td>
+                <td><strong>P</strong></td>
+            </tr>
+        </table>
+
+        <table class="content-table">
+            <tr>
+                <td colspan="4"><strong>SINTOMAS</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for=""><input type="checkbox"> Cefaleia</label>
+                    <label for=""><input type="checkbox"> Diarreia</label>
+                    <label for=""><input type="checkbox"> Tosse</label>
+                    <label for=""><input type="checkbox"> Febre</label>
+                </td>
+                <td>
+                    <label for=""><input type="checkbox"> Dispneia</label>
+                    <label for=""><input type="checkbox"> Astenia</label>
+                    <label for=""><input type="checkbox"> Mialgia</label>
+                    <label for=""><input type="checkbox"> Outros</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>SINAIS DE GRAVIDADE</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for=""><input type="checkbox"> Não</label>
+                    <label for=""><input type="checkbox"> SPO2 95% em A.A.</label>
+                    <label for=""><input type="checkbox"> Desconforto ou Dispneia</label>
+                    <label for=""><input type="checkbox"> Hipotensão/Lipotimia</label>
+                </td>
+                <td>
+                    <label for=""><input type="checkbox"> Dor abdominal intensa</label>
+                    <label for=""><input type="checkbox"> Vômitos persistentes</label>
+                    <label for=""><input type="checkbox"> Piora condições clínica de base</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>AVALIAÇÃO DA DOR</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for=""><input type="checkbox">0-2 Leve</label>
+                    <label for=""><input type="checkbox">2-4 Tolerável</label>
+                    <label for=""><input type="checkbox">4-6 Angustiante</label>
+                </td>
+                <td>
+                    <label for=""><input type="checkbox">6-7 Intensa</label>
+                    <label for=""><input type="checkbox">7-10 Insuportável</label>
+                </td>
+            </tr>
+        </table>
+
+        <table class="content-table">
+            <tr>
+                <td><strong>COMORBIDADES</strong></td>
+                <td>
+                    <label for=""><input type="checkbox"> HAS</label>
+                    <label for=""><input type="checkbox"> DM</label>
+                    <label for=""><input type="checkbox"> Cardiopatia</label>
+                    <label for=""><input type="checkbox"> D. Renal</label>
+                    <label for=""><input type="checkbox"> Pneumopatia</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for=""><input type="checkbox"> D. Neuro</label>
+                    <label for=""><input type="checkbox"> D. Hemato</label>
+                    <label for=""><input type="checkbox"> Imunossupressão</label>
+                    <label for=""><input type="checkbox"> Asma</label>
+                    <label for=""><input type="checkbox"> Nega comorbidades</label>
+                </td>
+            </tr>
+        </table>
+
+        <table class="content-table">
+            <tr>
+                <td><strong>TR-AG COVID-19</strong></td>
+                <td><label for=""><input type="checkbox"> SIM</label></td>
+                <td><label for=""><input type="checkbox"> NÃO</label></td>
+                <td><label for=""><input type="checkbox"> SOLICITADO</label></td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>TESTAGEM</strong></td>
+            </tr>
+            <tr>
+                <td><strong>RESULTADO</strong></td>
+                <td><label for=""><input type="checkbox"> R</label></td>
+                <td><label for=""><input type="checkbox"> NR</label></td>
+            </tr>
+            <tr>
+                <td><strong>ORIENTAÇÕES</strong></td>
+                <td colspan="3">
+                    <label for="">
+                        <input type="checkbox"> Sinais de alarme
+                    </label>
+                    <label for="">
+                        <input type="checkbox"> Hidratação
+                    </label>
+                    <label for="">
+                        <input type="checkbox"> Repouso/Alimentação
+                    </label>
+                    <label for=""><input type="checkbox"> Encaminhado ao médico</label>
+                </td>
+            </tr>
+        </table>
+
+        <table class="content-table">
+            <tr>
+                <td><strong>ATENDIMENTO MÉDICO - HISTÓRIA CLÍNICA</strong></td>
+            </tr>
+            <tr>
+                <td><strong>HD</strong></td>
+            </tr>
+            <tr>
+                <td><strong>HORA</strong></td>
+            </tr>
+        </table>
+        <footer>
+            <p class="small-text">
+                UPA NOEL MACEDO<br>
+                Rua Minervina Francisca da Conceição, S/N Bairro Itapuã CEP 57300-00 Arapiraca - Alagoas.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
