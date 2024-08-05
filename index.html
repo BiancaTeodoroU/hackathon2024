@@ -6,7 +6,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Formulário de atendimento médico</title>
 </head>
-<body>
+<body> 
+    <header class="tri">
+        <div class="image">
+
+        </div>
+    </header>
+
     <div class="table">
         <table class="header-table">
             <tr>
@@ -18,8 +24,7 @@
                     <strong>FICHA DE ATENDIMENTO URGÊNCIA E EMERGÊNCIA</strong>
                 </td>
                 <td class="center">
-                    <img src="upa24h_logo.png" alt="UPA 24h"><br>
-                    <img src="sus_logo.png" alt="SUS">
+                    <img width="60px" src="images.png" alt="SUS">
                 </td>
             </tr>
         </table>
@@ -28,23 +33,23 @@
             <tr>
                 <td colspan="2"><strong>DADOS DE IDENTIFICAÇÃO</strong></td>
                 <td><strong>DATA:</strong></td>
-                <td></td>
+                <td><input type="text" id="data"></td>
             </tr>
             <tr>
                 <td><strong>PACIENTE:</strong></td>
-                <td></td>
+                <td><label for=""><input type="text" id="paciente"></label></td>
                 <td><strong>HORA:</strong></td>
-                <td></td>
+                <td><label for=""><input type="text" id="hora"></label></td>
             </tr>
             <tr>
                 <td><strong>DATA NASC.:</strong></td>
-                <td></td>
+                <td><label for=""><input type="text" id="data-nasc"></label></td>
                 <td><strong>IDADE:</strong></td>
-                <td></td>
+                <td><label for=""><input type="text" id="idade"></label></td>
             </tr>
             <tr>
                 <td><strong>CPF:</strong></td>
-                <td></td>
+                <td><label for=""><input type="text" id="cpf"></label></td>
                 <td><strong>CONTATO:</strong></td>
                 <td>
                     <label for=""><input type="radio" name="contato" value="F"> F</label>
@@ -54,13 +59,13 @@
             </tr>
             <tr>
                 <td><strong>END.:</strong></td>
-                <td colspan="3"></td>
+                <td colspan="3"><input type="text" id="endereco"></td>
             </tr>
             <tr>
                 <td><strong>BAIRRO:</strong></td>
-                <td></td>
+                <td><label for=""><input type="text" id="bairro"></label></td>
                 <td><strong>CIDADE:</strong></td>
-                <td></td>
+                <td><label for=""><input type="text" id="cidade"></label></td>
             </tr>
             <tr>
                 <td><strong>RAÇA/COR:</strong></td>
@@ -265,6 +270,31 @@
                 <td><strong>HORA</strong></td>
             </tr>
         </table>
+        
+        <button id="start-record-btn" onclick="checkCheckbox()">Iniciar Gravação</button>
+        <p><strong>Fale para marcar o sintoma correspondente.</strong></p>
+        <div class="table" id="medicalForm">
+    
+            <!-- Dados de Identificação e outras seções omitidas para brevidade -->
+    
+            <table class="content-table FormColorManager">
+                <tr>
+                    <td colspan="4"><strong>SINTOMAS</strong></td>
+                </tr>
+                <tr id="sintomas">
+                    <td>
+                        <label><input type="checkbox" value="cefaleia"  class="common-symptom" readonly> Cefaleia</label>
+                        <label><input type="checkbox" value="diarreia" class="common-symptom" readonly> Diarreia</label>
+                        <label><input type="checkbox" value="tosse" class="common-symptom" readonly> Tosse</label>
+                        <label><input type="checkbox" value="febre" class="common-symptom" readonly> Febre</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" value="dor abdominal intensa"  class="severe-symptom" readonly> Dor abdominal intensa</label>
+                    </td>
+                </tr>
+            </table>
+            <!-- Footer omitido para brevidade -->
+        </div>
         <footer>
             <p class="small-text">
                 UPA NOEL MACEDO<br>
@@ -272,5 +302,6 @@
             </p>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -12,6 +12,7 @@
     "url": "git+https://github.com:BiancaTeodoroU/hackathon2024.git"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "path": "^0.12.7"
   }
 }
